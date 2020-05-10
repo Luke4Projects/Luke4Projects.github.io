@@ -1,10 +1,20 @@
 <div id="bar">
 
     <center>
-    <h1 id="barTitle">Lukes Projects</h1>
+    <h1 id="barTitle">Luke's Projects</h1>
     </center>
 
 </div>
+
+<center>
+<p id="welcomeText">Welcome To Luke's Projects!</p>
+<p id="informationText">Here you will find free and fun games that you can play in your web browser with no download.</p>
+</center>
+
+<h1 id="skyDodgeText">Sky Dodge Game</h1>
+<button id="playSkyDodge" onclick="moveToSkyDodge()">Play Sky Dodge</button>
+<img id="shipImg" src="data/Ship.png">
+<button id="howToPlaySkyDodge">What is Sky Dodge?</button>
 
 <style>
 
@@ -15,7 +25,56 @@
         font-family: cursive;
     }
     body {
-        background-color: slategray;
+        background:slategray;
+        background: linear-gradient(90deg, slategray 0%, darkslategray 100%, white 0%);
+    }
+    #welcomeText {
+        color: white;
+        font-family: cursive;
+        font-size: 25px;
+    }
+    #informationText {
+        color: white;
+        font-family:cursive, monospace;
+        font-size: 20px;
+    }
+    #skyDodgeText {
+        color:lightyellow;
+        font-family: cursive;
+        margin-top: 100px;
+        margin-left: 160px;
+    }
+    #playSkyDodge {
+        background-color: lightgreen;
+        border: none;
+        width: 210px;
+        height: 50px;
+        font-family: cursive;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    #playSkyDodge:hover {
+        height: 60px;
+        width: 220px;
+        font-size: 25px;
+        background-color: lightblue;
+    }
+    #howToPlaySkyDodge {
+        background-color: lightgreen;
+        border: none;
+        width: 210px;
+        height: 50px;
+        font-family: cursive;
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    #howToPlaySkyDodge:hover {
+        height: 60px;
+        width: 220px;
+        font-size: 22px;
+        background-color: lightblue;
     }
 
 </style>
+
+<script src="app.js"></script>
