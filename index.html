@@ -2,6 +2,7 @@
 
     <center>
     <h1 id="barTitle">Luke's Projects</h1>
+    <button id="scrollToRecreations">Recreations of Popular Games</button>
     </center>
 
 </div>
@@ -11,45 +12,60 @@
 <p id="informationText">Here you will find free and fun games that you can play in your web browser with no download.</p>
 </center>
 
-<h1 id="skyDodgeText">Sky Dodge Game</h1>
+<center>
+
+<h1 id="myGamesTitle">My Games</h1>
+
+<h1 id="skyDodgeText">Sky Dodge</h1>
 <button id="playSkyDodge" onclick="moveToSkyDodge()">Play Sky Dodge</button>
 <img id="shipImg" src="data/Ship.png">
-<button id="howToPlaySkyDodge">What is Sky Dodge?</button>
+<button id="howToPlaySkyDodge" onclick="howToPlaySkyDodge();">What is Sky Dodge?</button>
+
+<hr id="seperationLine">
+
+<h1 id="recreationsTitle">My Recreations Of Popular Games</h1>
+
+<h1 id="pongTitle">Pong</h1>
+<button id="playPong" onclick="goToPong()">Play Pong</button>
+<img id="pongImg" src="data/pong.PNG">
+<button id="howToPlayPong">How to Play my version of Pong</button>
+
+</center>
 
 <style>
 
     #bar {
-        background-color:aquamarine;
+        background-image: url("data/bush.png");
+        height: 130px;
     }
     #barTitle {
-        font-family: cursive;
+        font-family: 'Comic Sans MS';
     }
     body {
         background:slategray;
-        background: linear-gradient(90deg, slategray 0%, darkslategray 100%, white 0%);
+        background: linear-gradient(0deg, slategray 10%, darkslategray 100%, white 35%);
     }
     #welcomeText {
         color: white;
-        font-family: cursive;
+        font-family: 'Comic Sans MS';
         font-size: 25px;
     }
     #informationText {
         color: white;
-        font-family:cursive, monospace;
+        font-family:'Comic Sans MS';
         font-size: 20px;
     }
     #skyDodgeText {
         color:lightyellow;
-        font-family: cursive;
+        font-family: 'Comic Sans MS';
         margin-top: 100px;
-        margin-left: 160px;
     }
     #playSkyDodge {
         background-color: lightgreen;
         border: none;
         width: 210px;
         height: 50px;
-        font-family: cursive;
+        font-family: 'Comic Sans MS';
         font-size: 20px;
         transition-duration: 0.4s;
     }
@@ -64,7 +80,7 @@
         border: none;
         width: 210px;
         height: 50px;
-        font-family: cursive;
+        font-family: 'Comic Sans MS';
         font-size: 20px;
         transition-duration: 0.4s;
     }
@@ -72,6 +88,74 @@
         height: 60px;
         width: 220px;
         font-size: 22px;
+        background-color: lightblue;
+    }
+    #scrollToRecreations {
+        height: 50px;
+        width: 300px;
+        background-color: lightgreen;
+        border: none;
+        color: black;
+        font-family: "Comic Sans MS";
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #seperationLine {
+        margin-top: 50px;
+    }
+    #myGamesTitle {
+        font-family: "Arial Black";
+        color: white;
+        font-weight: 800;
+        text-decoration: underline;
+        margin-top: 100px;
+    }
+    #recreationsTitle {
+        font-family: "Arial Black";
+        color: white;
+        font-weight: 800;
+        text-decoration: underline;
+        margin-top: 30px;
+    }
+    #pongTitle {
+        margin-top: 100px;
+        font-family: "Comic Sans MS";
+        color: lightyellow;
+    }
+    #playPong {
+        background-color: lightgreen;
+        border: none;
+        width: 250px;
+        height: 50px;
+        font-family: 'Comic Sans MS';
+        font-size: 20px;
+        transition-duration: 0.4s;
+    }
+    #playPong:hover {
+        height: 60px;
+        width: 260px;
+        font-size: 24px;
+        background-color: lightblue;
+    }
+    #pongImg {
+        width: 3%;
+        height: 5%;
+        position: relative;
+        top: 10px;
+    }
+    #howToPlayPong {
+        width: 250px;
+        height: 50px;
+        font-size: 16px;
+        background-color: lightgreen;
+        border: none;
+        font-family: "Comic Sans MS";
+        transition-duration: 0.4s;
+    }
+    #howToPlayPong:hover {
+        width: 260px;
+        height: 60px;
+        font-size: 17px;
         background-color: lightblue;
     }
 
