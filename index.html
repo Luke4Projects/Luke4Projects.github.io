@@ -1,9 +1,10 @@
+<button id="scrollToTopButton" onclick="document.getElementById('bar').scrollIntoView()">&uarr;</button>
 
 <div id="bar">
 
     <center>
     <h1 id="barTitle">Luke's Projects</h1>
-    <button id="scrollToRecreations">Recreations of Popular Games</button>
+    <button id="scrollToRecreations" onclick="document.getElementById('recreationsTitle').scrollIntoView()">Recreations of Popular Games</button>
     </center>
 
 </div>
@@ -22,6 +23,11 @@
 <img id="shipImg" src="data/Ship.png">
 <button id="howToPlaySkyDodge" onclick="howToPlaySkyDodge();">What is Sky Dodge?</button>
 
+<h1 id="dodgeBallText">Dodge Ball</h1>
+<button id="playDodgeBall" onclick="goToDodgeBall();">Play Dodge Ball</button>
+<img id="dodgeBallImg" src="data/dodge ball.png">
+<button id="howToPlayDodgeBall" onclick="howToPlayDodgeBall()">What is Dodge Ball</button>
+
 <hr id="seperationLine">
 
 <h1 id="recreationsTitle">My Recreations Of Popular Games</h1>
@@ -29,15 +35,48 @@
 <h1 id="pongTitle">Pong</h1>
 <button id="playPong" onclick="goToPong()">Play Pong</button>
 <img id="pongImg" src="data/pong.PNG">
-<button id="howToPlayPong">How to Play my version of Pong</button>
+<button id="howToPlayPong" onclick="howToPlayPong();">How to Play my version of Pong</button>
+
+<h1 id="breakoutTitle">Breakout / Arkanoid</h1>
+<button id="playBreakout" onclick="goToBreakout()">Play Breakout</button>
+<img id="breakoutImg" src="data/breakout.png">
+<button id="howToPlayBreakout" onclick="howToPlayBreakout()">How to play my version of Breakout</button>
 
 </center>
 
 <style>
 
+    html {
+        scroll-behavior: smooth;
+    }
+    #scrollToTopButton {
+        position: fixed;
+        right: 50px;
+        width: 80px;
+        height: 80px;
+        border: none;
+        border-radius: 100%;
+        background-color: red;
+        color: white;
+        font-size: 45px;
+        font-weight: 800;
+        bottom: 20px;
+        display: none;
+        transition-duration: 0.4s;
+    }
+    #scrollToTopButton:hover {
+        background-color: crimson;
+        width: 85px;
+        height: 85px;
+    }
+    #scrollToTopButton:active {
+        transition-duration: 0.1s;
+        background-color: grey;
+    }
     #bar {
         background-image: url("data/bush.png");
         height: 130px;
+        width: 100%;
     }
     #barTitle {
         font-family: 'Comic Sans MS';
@@ -157,6 +196,89 @@
         width: 260px;
         height: 60px;
         font-size: 17px;
+        background-color: lightblue;
+    }
+    #breakoutImg {
+        width: 3%;
+        height: 5%;
+        position: relative;
+        top: 10px;
+    }
+    #playBreakout {
+        width: 250px;
+        height: 50px;
+        font-size: 16px;
+        border: none;
+        background-color: lightgreen;
+        font-family: "Comic Sans MS";
+        font-weight: 500;
+        transition-duration: 0.4s;
+    }
+    #howToPlayBreakout {
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+        border: none;
+        background-color: lightgreen;
+        font-family: "Comic Sans MS";
+        transition-duration: 0.4s;
+    }
+    #playBreakout:hover {
+        background-color: lightblue;
+        width: 260px;
+        height: 60px;
+        font-size: 20px;
+    }
+    #howToPlayBreakout:hover {
+        width: 310px;
+        height: 60px;
+        font-size: 18px;
+        background-color: lightblue;
+    }
+    #breakoutTitle {
+        margin-top: 100px;
+        font-family: "Comic Sans MS";
+        color: lightyellow;
+    }
+    #dodgeBallText {
+        color:lightyellow;
+        font-family: 'Comic Sans MS';
+        margin-top: 100px;
+    }
+    #dodgeBallImg {
+        width: 3%;
+        height: 5%;
+        position: relative;
+        top: 10px;
+    }
+    #playDodgeBall {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        border: none;
+        background-color: lightgreen;
+        font-family: "Comic Sans MS";
+        transition-duration: 0.4s;
+    }
+    #howToPlayDodgeBall {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        border: none;
+        background-color: lightgreen;
+        font-family: "Comic Sans MS";
+        transition-duration: 0.4s;
+    }
+    #playDodgeBall:hover {
+        width: 310px;
+        height: 60px;
+        font-size: 23px;
+        background-color: lightblue;
+    }
+    #howToPlayDodgeBall:hover {
+        width: 310px;
+        height: 60px;
+        font-size: 23px;
         background-color: lightblue;
     }
 
