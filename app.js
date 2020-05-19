@@ -12,8 +12,11 @@ function goToBreakout() {
 function goToDodgeBall() {
     location.href = "https://luke4projects.github.io/Dodge-Ball"
 }
+function goToDodgeApple() {
+    location.href = "https://luke4projects.github.io/Dodge-The-Apples"
+}
 
-                                        //CHANGE TO HOW TO PLAY FUNCTIONS
+//CHANGE TO HOW TO PLAY FUNCTIONS
 //----------------------------------------------------------------------------------------------------------------------------\\
 
 //                                      FORMAT:
@@ -51,8 +54,15 @@ function howToPlayDodgeBall() {
     document.write("<h2>To dodge the balls of lava coming towards you, use the UP and DOWN arrow keys.</h2>")
     document.write("<button onclick='location.reload()'>Click here to go back to site</button>")
 }
+function howToPlayDodgeTheApples() {
+    document.write("<h1>What Is Dodge The Apples:</h1>");
+    document.write("<h2>Dodge The Apples is a very simple game about dodging apples coming towards you. To goal is to get the highest score possible. Your score will go up as you stay alive. If you hit one of the red apples, you will die. If you hit one of the green apples, your score will go up by 5.</h2>")
+    document.write("<h1>How To Play Dodge The Apples</h1>");
+    document.write("<h2>To dodge the apples, use the LEFT and RIGHT arrow keys. You can also jump with the UP arrow key.</h2>")
+    document.write("<button onclick='location.reload()'>Click here to go back to site</button>")
+}
 
-window.onscroll = function() {this.onScroll()}
+window.onscroll = function () { this.onScroll() }
 
 function onScroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
