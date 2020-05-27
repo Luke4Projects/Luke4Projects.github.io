@@ -1,5 +1,3 @@
-<title>Luke's Projects</title>
-
 <button id="scrollToTopButton" onclick="document.getElementById('bar').scrollIntoView()">&uarr;</button>
 
 <div id="bar">
@@ -23,7 +21,7 @@
 <h1 id="skyDodgeText">Sky Dodge</h1>
 <button id="playSkyDodge" onclick="moveToSkyDodge()">Play Sky Dodge</button>
 <img id="shipImg" src="data/Ship.png">
-<button id="howToPlaySkyDodge" onclick="howToPlaySkyDodge();">What is Sky Dodge?</button>
+<button id="howToPlaySkyDodge" onclick="howToPlaySkyDodge();">What is Sky Dodge</button>
 
 <h1 id="dodgeBallText">Dodge Ball</h1>
 <button id="playDodgeBall" onclick="goToDodgeBall();">Play Dodge Ball</button>
@@ -81,15 +79,18 @@
         background-color: grey;
     }
     #bar {
-        background-image: url("data/bush.png");
+        background-color: rgb(43, 43, 43);
         height: 130px;
         width: 100%;
     }
     #barTitle {
-        font-family: 'Comic Sans MS';
+		color: red;
+        font-family: 'Impact';
+		letter-spacing: 2.0;
+		font-size: 40px;
     }
     body {
-        background-color: #626262;
+        background-color: rgb(82, 82, 82);
     }
     #welcomeText {
         color: white;
