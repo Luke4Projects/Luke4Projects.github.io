@@ -15,6 +15,9 @@ function goToDodgeBall() {
 function goToDodgeApple() {
     location.href = "https://luke4projects.github.io/Dodge-The-Apples"
 }
+function goToWarpAttack() {
+    location.href = "https://luke4projects.github.io/Warp-Attack"
+}
 
 //CHANGE TO HOW TO PLAY FUNCTIONS
 //----------------------------------------------------------------------------------------------------------------------------\\
@@ -59,6 +62,13 @@ function howToPlayDodgeTheApples() {
     document.write("<h2>Dodge The Apples is a very simple game about dodging apples coming towards you. To goal is to get the highest score possible. Your score will go up as you stay alive. If you hit one of the red apples, you will die. If you hit one of the green apples, your score will go up by 5.</h2>")
     document.write("<h1>How To Play Dodge The Apples</h1>");
     document.write("<h2>To dodge the apples, use the LEFT and RIGHT arrow keys. You can also jump with the UP arrow key.</h2>")
+    document.write("<button onclick='location.reload()'>Click here to go back to site</button>")
+}
+function howToPlayWarpAttack() {
+    document.write("<h1>What Is Warp Attack :</h1>");
+    document.write("<h2>Warp Attack is a game about shooting at enemies in space while dodging enemy fire coming towards you. The goal is to kill the most enemies and stay alive while doing so.</h2>")
+    document.write("<h1>How To Play Warp Attack:</h1>");
+    document.write("<h2>Use the arrow keys to move the player left, right, up, and down. To shoot, use the left mouse button, or the CONTROl or CTRL key on your keyboard. You kill get health and ammo after killing an enemy.</h2>")
     document.write("<button onclick='location.reload()'>Click here to go back to site</button>")
 }
 
