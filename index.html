@@ -1,4 +1,4 @@
-<!--HOME PAGE-->
+<!--GAMES PAGE-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199352606-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,7 +16,7 @@
   gtag('config', 'UA-199352606-1');
 </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>460games</title>
+    <title>460games - Games</title>
 </head>
 <body>
     <!--Header-->
@@ -28,8 +28,8 @@
           </a>
     
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="/" class="nav-link px-2 link-primary">Home</a></li>
-            <li><a href="/games" class="nav-link px-2 link-dark">Games</a></li>
+            <li><a href="/" class="nav-link px-2 link-dark">Home</a></li>
+            <li><a href="/games" class="nav-link px-2 link-primary">Games</a></li>
             <li><a href="/info" class="nav-link px-2 link-dark">Info</a></li>
           </ul>
     
@@ -37,12 +37,90 @@
         </header>
     </div>
 
-    <!--Body-->
-    <center>
-      <h1>460games</h1>
-      <p style="font-size: large">Welcome to the 460games (4-60) website. Here you will find simple arcade games created by me, Luke. <br>To get started, click on the "games" link at the top of the screen. For more information, go to the "info" page.</p>
-      <img src="460games.svg" width=250, height=100 style="margin-top: 450px">
-    </center>
+
+    <!--List games here-->
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Games</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          </div>
+          <div>
+            <h2>Forest Runner</h2>
+            <p>Run through a forest, dodging trees in your path. Hit a tree and its game over. Use the 'A' and 'D' keys on your keyboard to strafe side to side.</p>
+            <a href="https://luke4projects.github.io/forest-runner-min/" class="btn btn-primary">
+              Play
+            </a>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          </div>
+          <div>
+            <h2>Bot Stopper</h2>
+            <p>Top-down game where you control a robot. There is an enemy robot chasing you. Stay out of its vision. Collect the chargers on the ground for points and to slow the enemy down. Use 'W' 'A' 'S' and 'D' to control the player.</p>
+            <a href="https://luke4projects.github.io/Bot-Stopper" class="btn btn-primary">
+              Play
+            </a>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          </div>
+          <div>
+            <h2>Sky Dodge</h2>
+            <p>A side-scrolling game where you are a spaceship flying through the sky and you must dodge asteroids in your path. Use 'W' and 'S' to control the height of the ship.<br><br></p>
+            <a href="https://luke4projects.github.io/SkyDodge/" class="btn btn-primary">
+              Play
+            </a>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          </div>
+          <div>
+            <h2>Warp Attack</h2>
+            <p>A top down game where you are flying through space and you must shoot enemies in your way. Use the arrow keys on your keyboard to move the spaceship. Press 'CTRL' or click your mouse to shoot.</p>
+            <a href="https://luke4projects.github.io/Warp-Attack/" class="btn btn-primary">
+              Play
+            </a>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          </div>
+          <div>
+            <h2>Dodge Ball</h2>
+            <p>A side-scrolling game where you can move a ball up and down and you must dodge balls coming towards you. Use the arrow keys to move the ball up and down.<br><br></p>
+            <a href="https://luke4projects.github.io/Dodge-Ball/" class="btn btn-primary">
+              Play
+            </a>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          </div>
+          <div>
+            <h2>Dodge The Apples</h2>
+            <p>A side-scrolling game where you control a person who must dodge apples falling from the sky. Use the arrow keys to control the character.</p>
+            <a href="https://luke4projects.github.io/Dodge-The-Apples/" class="btn btn-primary">
+              Play
+            </a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
     <!--Keep this at the bottom, loads bootstrap javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
