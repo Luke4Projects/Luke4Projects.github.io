@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Quantico";
+    src: url(Quantico-Regular.ttf);
+}
+
+body {
+    background-color: #DEE8CE;
+    font-family: "Quantico";
+    font-size: xx-large;
+    color: #BB6653;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFF8E8;
+    margin-left: 0;
+    margin-right: 0;
+    border-style: dashed;
+    border-color: #BB6653;
+}
+
+.nav-bar li {
+  float: right;
+}
+
+.nav-bar li a {
+  display: block;
+  color: #BB6653;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar li a:hover {
+  color: #F08B51;
+}
+
+.title-name {
+    position:fixed;
+    margin-top: auto;
+    margin-left: 1%;
+}
+
+.title-name a {
+    text-decoration: none;
+    color: #BB6653;
+}
+
+.main-content {
+    color: #F08B51;
+    border-style:dashed;
+    border-color:#BB6653;
+    margin: 2%;
+    display: inline-block;
+    font-size: 200%;
+}
+
+.main-content > * {
+    margin: 2%;
+}
+
+.play-button {
+    text-decoration: none;
+    width: 50%;
+    font-size: 100%;
+    background-color: #FFF8E8;
+    color: #BB6653;
+    border-style: dashed;
+    border-color: #BB6653;
+    transition-duration: 200ms;
+}
+
+.play-button:hover {
+    background-color: #eee7d9;
+    width: 51%;
+}
+
+#pong-canvas {
+    float: right;
+    border-style: solid;
+    border-color: #BB6653;
+    border-width: 10px;
+    margin: 2%;
+}
+
+.extra-content {
+    margin: 2%;
+}
+
+.extra-content h3 {
+    margin-left: 2.3%;
+}
+
+.extra-content ul li {
+    display: inline-block;
+    vertical-align: text-top;
+}
